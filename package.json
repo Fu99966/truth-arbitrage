@@ -1,0 +1,32 @@
+{
+  "name": "truth-arbitrage",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k \"vite\" \"node --watch server/index.js\"",
+    "build": "vite build",
+    "start": "node server/index.js",
+    "smoke:gonka": "node scripts/gonka-smoke.js",
+    "smoke:search": "node scripts/search-smoke.js",
+    "smoke:live": "node scripts/live-analysis-smoke.js",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@fontsource/bodoni-moda": "^5.2.7",
+    "@fontsource/ibm-plex-mono": "^5.2.7",
+    "@fontsource/noto-serif-sc": "^5.2.8",
+    "dotenv": "^17.4.2",
+    "express": "^5.1.0",
+    "lucide-react": "^0.468.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.6.0",
+    "concurrently": "^9.2.1",
+    "vite": "^7.1.7",
+    "vitest": "^3.2.4"
+  }
+}
